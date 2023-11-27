@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0;padding: 0}
+html {scroll-behavior: smooth;}
+body { background-color:pink; color: white; margin:0; font-family: monospace;}
+
+header { display: flex; justify-content: space-between; background-color: pink; align-items: center; }
+a { color:black; text-decoration: none; margin: 20px; font-size: 30px}
+section {margin: 2%;}
+footer { display: flex; justify-content: space-between; background-color: pink; align-items: center; }
+
+span {
+  font-weight: bold;
+}
+
+.cajacontenedorasection {background: #F2F2F2;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 30px;}
+.logo {display: flex; justify-content: space-between; margin-left: 5%; width: 75%}
+.logofooter {display: flex; justify-content: space-between; margin-left: 15%; width: 50%}
+
+.buscadorbox {display: flex; align-content: center;}
+
+.boton { background-color: #F3468B; color:#000000; border-radius: 18px; padding: 10px; ; text-decoration: none; display: inline-block; text-decoration: none; font-size:30px; float: right;display: block; }
+.boton:hover {background-color: #CB105A; color:#FFFFFF;}
+
+.lupa {background-color: #C3B49B; color:#000000; border-radius: 18px; padding: 10px; text-decoration: none; display: inline-block; width: 50px;}
+.lupa:hover {background-color: #A39379; color:#FFFFFF;}
+
+.cajacontenedora { background: #F2F2F2;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 30px;width: 50%;height: 100%; margin: 2%; align-items: center; justify-content: center;}
+
+.cajacontenedorapublicidad {background: #F2F2F2;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 30px;width: 720px;height: 78px; margin: 5px;}
+
+.rectangleheader {position: absolute;width: 82%;height: 300px; background: #F2F2F2;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 30px;}
+.rectangle {display: flex; justify-content: center;width: 98% ;height: 656px; background: #F2F2F2;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 39px; margin-left: 1%}
+
+.mySlides {position: flex; justify-content: center ;width: 100%;filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));border-radius: 67px;}
+
+.cajacontenedoraslide { background: #F2F2F2;border-radius: 30px;width: 90%;height: 100%;top: 25%; margin-top: 2%; margin-left: 3%; margin-bottom: 2%; padding: 30px; }
+
+.cajacontenedorafooter { background: #F2F2F2;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 30px;width: 94%;height: 100%; margin-top: 1%; margin-right: 3%; margin-left: 3% ;align-items: center; display: flex;}
+
+.redes {margin-left: 60%;}
+
+.container {display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin: 40px 20px 0 20px;}
+
+.artistas a { color:black; text-decoration: none; }
+
+.cajafoto {background: #C3B49B;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 30px;width: 82%;height: 100%; margin-top: 5%; margin-right: 5%; padding: 5%; display: flex;
+  flex-direction: column;}
+
+.cajafotowiki {box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 30px; margin: 1%; margin-left: 10%; width: 70%; display: flex; }
+
+.cajaformulario {background: white;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 30px;}
+
+.autorwiki {float: right; margin: 1%; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 30px; width: 20%;}
+
+.redes {width: 30%; float: right; margin-right: 15%}
+
+.icono {display: none;}
+
+.logopublicidad {width: 250px}
+
+.gif {width: 90px; padding-bottom: 10px;}
+
+.textopublicidad {color: #F3468B; font-size: 16px; padding: 10px;padding-left: 10px ;text-align: right;}
+
+.publicidad iframe {width: 728px; height: 90px; justify-content: center; margin: auto;display: flex}
+
+.container .heading { 
+}
+
+.container .heading h3 {
+  font-size: 3em;
+}
+
+.container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .box .columna {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%; 
+  }
+ 
+.container .box .columna img { 
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 5%;
+  border-radius: 30px; 
+}
+.row {display: flex; flex-direction: row; justify-content: space-between;}
+
+
+@media (max-width:1048px ){
+.redes {margin-left: 40%;}
+}
+
+@media (max-width:769px ){ 
+.container .box {
+  flex-direction: column;
+}
+
+.container .box .columna {
+  width: 100%; 
+  }
+
+.icono {display: block;
+ }
+
+ 
+.boton {display: block;}
+
+.responsive {display: block;}
+
+.nav {display: none}
+
+
+
+.nav a {display: block; color: black}
+
+.publicidad iframe {width: 300px; height: 250px; justify-content: center; margin: auto; display: flex;}
+}
+
+
+
+
+
+
+
+

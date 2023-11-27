@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilos.css">  
+</head>
+
+<body>
+    <header>
+      <a href="index.html"><img class="logo" src="imagenes/logo escrito.png"></a>
+      <div class="cajacontenedora">
+    <nav>
+    <a class="boton" href="nosotros.html">NOSOTROS</a> 
+    <a class="boton" href="merch.html">MERCH</a> 
+    <a class="boton" href="cajas.html">CAJAS</a>
+    <a class="boton" href="menu.html">MENÚ</a>
+
+  </nav>
+      </div>
+  </header>
+
+   <section>
+    <div class="cajacontenedorasection">
+    <div class="cajacontenedorasection">
+      <img class="mySlides" src="imagenes/expo1.jpg">
+    </div>
+
+<div>
+  <p style="color: black; font-size: 18px; margin: 5%">Somos una pastelería perdida en una esquina de Saavecoghlan y nos encanta lo que hacemos.
+
+La Kitchen nació en Nueva York en el 2014. Después de años de trabajar en otros rubros decidí ir a tomar experiencia en lo que más me gustaba, cocinar. Empecé a trabajar en un Deli de Midtown en donde me tomaron con cero experiencia y a los meses no parábamos de despachar rolls de canela y marquise con dulce de leche casero y merengue italiano (100% argento). También era un éxito la carrot cake (la misma que hoy tenemos en nuestro local). 
+
+En 2015 volvimos y con Joako creamos Brooklyn Kitchen que luego pasó a ser La Kitchen. Empezamos vendiendo 3 tortas por mes vía facebook, empezamos a crecer, comenzamos a hacerles la pastelería a los más lindos cafés de especialidad de Buenos Aires y hoy ya somos varios trabajando en este emprendimiento que no para de crecer. 
+
+Usamos siempre la mejor materia prima disponible, nuestras harinas son orgánicas al igual que gran parte de nuestras frutas, usamos huevos libres de jaula y tenemos uno de los mejores cafés tostados en Buenos Aires. Hacemos todo artesanalamente y con muchísima dedicación. Con esta misma premisa atendíamos a los más lindos cafés cafés de especialidad y ahora los atendemos a ustedes.
+
+Creemos que las cosas se pueden hacer siempre bien, ricas y con materia prima de orígenes confiables. Atendemos con buena onda como premisa principal, porque la buena onda se contagia.
+
+Sofi, de La Kitchen
+  </p>
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.9835451349677!2d-58.47602836191998!3d-34.55397200965222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7147c3b3fc7%3A0x8b0a52b88a16fafd!2sLa%20Kitchen!5e0!3m2!1ses-419!2sar!4v1652981314291!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<div class="cajaformulario">
+<p style="text-align: center; font-size: 150%; padding-top: 3%; color: black"> <strong>Dejanos tu comentario!</strong> </p>
+<form method="post" action="Respuesta.html" style="text-align: center; padding: 3%;color:black">
+        <p><strong>Nombre:</strong> <input type="text" name="Nombre" required> </p>
+        <p><strong>Apellido:</strong> <input type="text" name="Apellido" required> </p>
+        <p><strong>Email:</strong> <input type="Email" name="Email" required> </p>
+        <p> <strong>Fecha:</strong> <input type="date" name="dia" max="2000-01-01" required></p>
+        <p> <strong>Dejanos tu comentario:</strong> <textarea name="mensaje"></textarea> </p>
+        <p> <input type="submit" name="envio" value="ENVIAR"> </p>
+    </form>
+</div>
+</div>
+    </section>
+
+    <footer>
+  <div class="cajacontenedorafooter">
+      <a href="index.html"><img class="logofooter"  src="imagenes/logo escrito.png"></a>
+      <a href="index.html"><img class="redes" src="imagenes/redes.png"></a>
+
+    </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+
+   function myFunction() {
+
+     var x = document.getElementById("mibarra");
+
+     if (x.className === " ") {
+
+       x.className += "responsive";
+
+     } else {
+
+       x.className = " ";
+
+     }
+
+   }
+
+</script>
+
+<script>
+
+var slideIndex = 1;
+
+showDivs(slideIndex);
+
+function plusDivs(n) {
+
+   showDivs(slideIndex += n);
+
+}
+
+
+
+function showDivs(n) {
+
+   var i;
+
+   // acá define qué elemento entra en el slider
+
+   var x = document.getElementsByClassName("mySlides");
+
+   if (n > x.length) {slideIndex = 1}
+
+   if (n < 1) {slideIndex = x.length} ;
+
+   for (i = 0; i < x.length; i++) {
+
+       x[i].style.display = "none";
+
+   }
+
+   x[slideIndex-1].style.display = "block";
+
+}
+
+carousel();
+
+function carousel() {
+
+   var i;
+
+   var x = document.getElementsByClassName("mySlides");
+
+   for (i = 0; i < x.length; i++) {
+
+     x[i].style.display = "none";
+
+   }
+
+   slideIndex++;
+
+   if (slideIndex > x.length) {slideIndex = 1}
+
+   x[slideIndex-1].style.display = "block";
+
+   setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
+
+}
+
+</script>
+  </body>
+</html>
